@@ -7,6 +7,6 @@ CREATE TABLE IF NOT EXISTS post (
   body varchar(1000) NULL,
   deleted bool NOT NULL,
   created_date timestamp NULL,
-  updated_data timestamp NULL,
+  updated_date timestamp NULL,
   PRIMARY KEY (id)
   );
