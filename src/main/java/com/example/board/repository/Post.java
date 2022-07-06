@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -29,7 +30,7 @@ public class Post {
 	
 	//投稿者
 	@Column(length = 20, nullable = false)
-	@NotBlank(groups = Group1.class)
+	@NotEmpty(groups = Group1.class)
 	@Size(min = 1, max = 20, groups = Group2.class)
 	private String author = null;
 	
